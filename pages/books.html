@@ -1,23 +1,23 @@
-<h3>Книги</h3>
+<h3>Books</h3>
 
-<button id="addBook" disabled class="btn btn-link" data-toggle="collapse" data-target="#collapse1">Добавить книгу</button>
+<button id="addBook" disabled class="btn btn-link" data-toggle="collapse" data-target="#collapse1">New book</button>
 <div id="collapse1" class="panel-collapse collapse">
 	<div class="panel-body">
 		<form id="add" method="post" action="addBook">
 			<div class="form-group">
-				<label class="control-label" for="title">Название</label>
+				<label class="control-label" for="title">Title</label>
 				<input class="form-control" id="title" name="title"/>
 			</div>
 			<div class="row form-group">
 				<div class="col-md-1">
-					<button id="addAuthor" type="button" class="btn btn-default" title="Добавить автора">
+					<button id="addAuthor" type="button" class="btn btn-default" title="Add an author">
 						<span class="glyphicon glyphicon-plus"></span>
 					</button>
 				</div>
 				<div id="authors" class="col-md-6"></div>
 			</div>
 			<div class="form-group">
-				<button type="submit" class="btn btn-success disabled" disabled>Добавить</button>
+				<button type="submit" class="btn btn-success disabled" disabled>Add</button>
 			</div>
 		</form>
 	</div>
@@ -86,7 +86,7 @@
 				$('<div/>',{class:'form-inline'})
 				.append(select)
 				.append(
-					$('<button/>',{type:'button',class:'btn btn-default delAuthor',title:'Удалить автора'})
+					$('<button/>',{type:'button',class:'btn btn-default delAuthor',title:'Remove the author'})
 					.append($('<span/>',{class:'glyphicon glyphicon-minus'}))
 				)
 				.appendTo('#authors')

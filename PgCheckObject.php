@@ -4,57 +4,57 @@ class PgCheckObject{
 		"getAuthors"=>[
 			'type'=>'relation',
 			'name'=>'authors_v',
-			'message'=>'Представление для списка авторов будет создано в теме 7 "Схема данных и интерфейс"'
+			'message'=>'Authors view will be created in lecture 7, "Application Schema and Interface"'
 		],
 		"addAuthor"=>[
 			'type'=>'function',
 			'name'=>'add_author',
 			'arguments'=>['text','text','text'],
-			'message'=>'Функция для добавления автора будет создана в теме 12 "Выполнение запросов"'
+			'message'=>'Function for adding an author will be created in lecture 12, "Executing Queries"'
 		],
 		"getBooks"=>[
 			'type'=>'relation',
 			'name'=>'catalog_v',
-			'message'=>'Представление для списка книг будет создано в теме 7 "Схема данных и интерфейс"'
+			'message'=>'Books view will be created in lecture 7, "Application Schema and Interface"'
 		],
 		"getOperations"=>[
 			'type'=>'relation',
 			'name'=>'operations_v',
-			'message'=>'Представление для операций будет создано в теме 7 "Схема данных и интерфейс"'
+			'message'=>'Operations view will be created in lecture 7, "Application Schema and Interface"'
 		],
 		"addBook"=>[
 			'type'=>'function',
 			'name'=>'add_book',
 			'arguments'=>['text','integer[]'],
-			'message'=>'Функция для добавления книги будет создана в теме 15 "Массивы"'
+			'message'=>'Function for adding a book will be created in lecture 15, "Arrays"'
 		],
 		"orderBook"=>[
 			'type'=>'trigger',
 			'relation'=>'catalog_v',
 			'tgtype'=>81, //instead of update
-			'message'=>'Триггер для обновления представления будет создан в теме 17 "Триггеры"'
+			'message'=>'Trigger for updating the view will be created in lecture 17, "Triggers"'
 		],
 		"findBooks"=>[
 			'type'=>'function',
 			'name'=>'get_catalog',
 			'arguments'=>['text','text','boolean'],
-			'message'=>'Функция для поиска книг будет создана в теме 10 "Составные типы"'
+			'message'=>'Function for searching books will be created in lecture 10, "Composite Types"'
 		],
 		"buyBook"=>[
 			'type'=>'function',
 			'name'=>'buy_book',
 			'arguments'=>['integer'],
-			'message'=>'Функция для покупки книги будет создана в теме 12 "Выполнение запросов"'
+			'message'=>'Function for buying books will be created in lecture 12, "Executing Queries"'
 		],
 	];
 	private static $columnChecks=[
 		"getBooks"=>[
 			'column'=>'onhand_qty',
-			'message'=>'Столбец наличного количества будет добавлен в теме 10 "Составные типы"'
+			'message'=>'Column for on-hand quantity will be added in lecture 10, "Composite Types"'
 		],
 		"findBooks"=>[
 			'column'=>'onhand_qty',
-			'message'=>'Столбец наличного количества будет добавлен в теме 10 "Составные типы"'
+			'message'=>'Column for on-hand quantity will be added in lecture 10, "Composite Types"'
 		],
 	];
 	
